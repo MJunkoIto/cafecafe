@@ -1,0 +1,119 @@
+/*________________________
+全体の枠組み
+_________________________*/
+
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  /*フォントカラー＆フォントサイズを指定*/
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:hover {
+  opacity: 0.7;
+  color: #e03131;
+}
+
+/*________________________
+全体の枠組み＆スマホ
+_________________________*/
+@media screen and (max-width: 767px) {
+}
+
+/*________________________
+header
+_________________________*/
+
+/*レイアウト最大幅、画面幅を狭めた場合の左右余白、中央寄せ*/
+#wrapper {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*背景の写真*/
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
+  position: relative;
+  margin: 20px 30px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.header__link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.header__item {
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+
+.header__title {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+/*________________________
+スマホ
+_________________________*/
+@media screen and (max-width: 767px) {
+  #wrapper {
+    max-width: 375px;
+  }
+}
+
+/*________________________
+menu
+_________________________*/
+#menu {
+  margin-top: 20px;
+}
+
+#menu .menu__img {
+  background-image: url(../img/menu.jpg);
+  position: relative;
+}
+#menu .menu__contents {
+  display: flex;
+  align-content: space-between;
+}
+
+#menu .nenu__item {
+  width:50px;
+  padding: 0 45px;}
